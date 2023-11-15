@@ -1,4 +1,3 @@
-// BenevolatApp.java
 package code;
 
 import javax.swing.*;
@@ -98,8 +97,6 @@ public class BenevolatApp {
         panel.setLayout(new GridBagLayout());
         GridBagConstraints constraints1 = new GridBagConstraints();
         constraints.insets = new Insets(5, 5, 5, 5);
-
-        // ... (autres composants)
 
         JButton submitButton1 = new JButton("S'inscrire");
         constraints.gridx = 0;
