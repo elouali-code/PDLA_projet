@@ -9,13 +9,10 @@ public class interface_graphique {
 
     public static void main(String[] args) 
     {
-        // Définissez le frame
         JFrame frame = new JFrame("Hello World");
 
-        // Set data in the drop-down list
         String[] liste = {"contact", "abde", "fu", "oussama", "boyu"};
 
-        // Créer une liste déroulante
         JComboBox cb = new JComboBox(liste);
     
         frame.setLayout(new GridLayout(6, 1));
