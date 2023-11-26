@@ -5,9 +5,9 @@ public class utilisateur {
     private String password;
     private static String email;
     private static String role;
-    private int age;
+    private String age;
 
-    public utilisateur(String username, String password, String email, String role, int age) {
+    public utilisateur(String username, String password, String email, String role, String age) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -15,10 +15,11 @@ public class utilisateur {
         this.age = age;
     }
 
-    public utilisateur(String nom, String role, String email2) {
+    public utilisateur(String nom, String email, String role, String age2) {
         this.username = nom;
         this.email = email;
         this.role = role;
+        this.age=age;
     }
 
     public static String getNom() {
@@ -33,7 +34,7 @@ public class utilisateur {
         return role;
     }
 
-    public int getage() {
+    public String getage() {
         return age;
     }
 
