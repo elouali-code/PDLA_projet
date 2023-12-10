@@ -54,4 +54,27 @@ public class DatabaseConnection {
         // En cas d'erreur, retourner null
         return null;
     }
+    
+    public static void addUtilisateur(utilisateur user) {
+        try {
+            // Charger le pilote JDBC
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // Établir la connexion à la base de données
+            Connection connection = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+
+            String sql = "INSERT INTO users2 (username, password, email, role, age) VALUES (?, ?, ?, ?, ?)";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setString(1, user.getNom());
+                statement.setString(2, user.getPassword());
+                statement.setString(3, user.getEmail());
+                statement.setString(4, user.getRole());
+                statement.setString(5, user.getage());
+
+                statement.executeUpdate();
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        } 
+}
 }

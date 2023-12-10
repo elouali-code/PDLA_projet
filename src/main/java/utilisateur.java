@@ -26,6 +26,10 @@ public class utilisateur {
         return username;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public static String getEmail() {
         return email;
     }

@@ -67,6 +67,10 @@ public class Main {
         loginButton.setForeground(new Color(255, 165, 0)); // Texte orange
         panel.add(loginButton, constraints);
 
+        JButton inscribeButton = new JButton("S'inscrire"); // inscription
+        constraints.gridy = 3;
+        panel.add(inscribeButton, constraints);
+
         // Style du bouton
         loginButton.setBorderPainted(false);
         loginButton.setFocusPainted(false);
@@ -105,5 +109,32 @@ public class Main {
                 }
             }
         });
+        
+    inscribeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //inscription
+                testSignInButton(frame);
+            }
+        });
+    }
+
+    private static void testSignInButton(JFrame frame) {
+        String username = JOptionPane.showInputDialog("Enter username:");
+        String password = JOptionPane.showInputDialog("Enter password:");
+        String email = JOptionPane.showInputDialog("Enter email:");
+
+        String[] roles = {"benevolat", "validateur", "hospitalise"};
+        String role = (String) JOptionPane.showInputDialog(null, "Choose a role:", "Select Role",
+                JOptionPane.QUESTION_MESSAGE, null, roles, roles[0]);
+
+        String age = JOptionPane.showInputDialog("Enter age:");
+
+        utilisateur newUser = new utilisateur(username, password, email, role, age);
+
+        DatabaseConnection.addUtilisateur(newUser);
+
+        JOptionPane.showMessageDialog(frame, "User added to the database!");
     }
 }
+
