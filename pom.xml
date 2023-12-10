@@ -18,6 +18,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.1</version>
+        <scope>test</scope>
+    </dependency>
  
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.insa.maven.Benevolat</groupId>
