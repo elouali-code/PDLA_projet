@@ -8,8 +8,10 @@
 ## Exécution avec Maven
 <p>
   Pour exécuter l'application avec Maven, suivez les étapes ci-dessous :
-  mvn compile
-  mvn exec:java
+    <ul>
+        <li>mvn compile</li>
+        <li>mvn exec:java</li>
+    </ul> 
   Cela va compiler et exécuter l'App. Assurez-vous d'avoir installé Maven et exec, et que la configuration est correcte(ex: java build path: mysql-connector-j-8.2.0.jar).
 </p>
 
