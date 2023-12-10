@@ -120,6 +120,7 @@ public class Main {
     }
 
     private static void testSignInButton(JFrame frame) {
+    	int id = Integer.parseInt(JOptionPane.showInputDialog("Enter ID(3 numbers):"));
         String username = JOptionPane.showInputDialog("Enter username:");
         String password = JOptionPane.showInputDialog("Enter password:");
         String email = JOptionPane.showInputDialog("Enter email:");
@@ -130,11 +131,8 @@ public class Main {
 
         String age = JOptionPane.showInputDialog("Enter age:");
 
-        utilisateur newUser = new utilisateur(username, password, email, role, age);
+        utilisateur newUser = new utilisateur(username, password, email, role, age, id);
 
         DatabaseConnection.addUtilisateur(newUser);
-
-        JOptionPane.showMessageDialog(frame, "User added to the database!");
     }
 }
-
