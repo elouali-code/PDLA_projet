@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire/surefirebooter-20231210235030258_3.jar /home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire 2023-12-10T23-50-30_079-jvmRun1 surefire-20231210235030258_1tmp surefire_0-20231210235030258_2tmp"/>
+    <property name="sun.java.command" value="/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire/surefirebooter-20231211003914512_3.jar /home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire 2023-12-11T00-39-14_257-jvmRun1 surefire-20231211003914512_1tmp surefire_0-20231211003914512_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/test-classes:/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/classes:/home/bfu/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/bfu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire/surefirebooter-20231210235030258_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/bfu/4MIC/BDD/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/target/surefire/surefirebooter-20231211003914512_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+9-Ubuntu-122.04"/>
     <property name="user.name" value="bfu"/>
@@ -51,5 +51,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testSignInButton" classname="TestAdd" time="0.069"/>
+  <testcase name="testSignInButton" classname="TestAdd" time="0.083"/>
 </testsuite>
