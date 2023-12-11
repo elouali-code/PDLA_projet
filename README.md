@@ -18,6 +18,8 @@
 ## Rapport
 <p>
   Contient notre rapport de projet.
+  [Rapport PDLA Elouali  & Fu.pdf](https://github.com/elouali-code/Processus-de-d-veloppement-logiciel-automatis-Conduite-de-projet/files/13635310/Rapport.PDLA.Elouali.Fu.pdf)
+
 </p>
 
 ## Techologies 
